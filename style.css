@@ -2,3 +2,10 @@
 Theme Name: Companie Lüna
 Version: 1.0
 */
+section {
+    color: green;
+}
+
+h1 {
+    font-weight: bold;
+}
