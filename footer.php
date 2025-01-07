@@ -1,6 +1,7 @@
 <footer>
+    <?php dynamic_sidebar( 'footer-sidebar' ); ?>
+  </footer>
 
-</footer>
-<?php wp_footer(); ?> <!-- c pour le bandeau en haut -->
-</body>
+  <?php wp_footer(); ?>
+  </body>
 </html>
