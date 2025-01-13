@@ -1,3 +1,7 @@
+.header {
+    margin-top: 0;
+}
+
 .header a {
     text-decoration: none;
     color: #eec899;
@@ -6,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
     font-family: "Cherry Bomb One", serif;
     gap: 100px;
     margin-right: 3rem;
