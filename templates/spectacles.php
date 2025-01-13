@@ -4,7 +4,7 @@
 <?php get_header (); ?>
  <div>
      <section>
-        <h1> Agenda </h1>
+        <h1> Spectacles </h1>
 
      </section>
    </div>

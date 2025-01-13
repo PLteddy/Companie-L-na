@@ -6,3 +6,23 @@ Version: 1.0
 h1 {
     font-weight: bold;
 }
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    background-color: #d1ae86;
+    width: 238px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;  
+    outline: none; 
+    cursor: pointer; 
+}
+
+button:hover{
+    background-color: #EFE8DC;
+}

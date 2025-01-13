@@ -13,14 +13,14 @@
     <header>
       <section class="header">
     <div class="header-container">
-    <div class="menu-item">La compagnie</div>
-    <div class="menu-item">Les spectacles</div>
+    <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('la_compagnie')->ID); ?>" data-key="la_compagnie">La compagnie</a></div>
+    <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">Spectacles</a></div>
     <div class="logo-container">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
-        <span>Chambéry et alentours</span>
+        <a href="<?php echo get_permalink(get_page_by_path('accueil')->ID); ?>" data-key="accueil"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo"> </a>
+        <p>Chambéry et alentours</p>
     </div>
-    <div class="menu-item">Agenda</div>
-    <div class="menu-item">Contact</div>
+    <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>" data-key="agenda">Agenda</a></div>
+    <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('contact')->ID); ?>" data-key="contact">Contact</a></div>
 </div>
 </section>
     </header>
