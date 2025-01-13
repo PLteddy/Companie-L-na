@@ -3,9 +3,11 @@
 
 //Pour lier le css
 function add_style() {
+  wp_enqueue_style('reset-style', get_template_directory_uri() . '/reset.css', false);
   wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false); //wordpress ajoute à la file le style
+  wp_enqueue_style('footer-style', get_template_directory_uri() . '/footer.css', false);
 }
-add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il chaarge enqueue_scripts il appelle le style
+add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqueue_scripts il appelle le style
 
 //Pour lier le js
 function add_script() {

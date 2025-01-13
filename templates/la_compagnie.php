@@ -1,10 +1,10 @@
 <?php 
- /* Template Name: About */
+ /* Template Name: la_compagnie */
 ?>
 <?php get_header (); ?>
  <div>
      <section>
-        <h1> ABOUT </h1>
+        <h1> La compagnie </h1>
      </section>
    </div>
  
