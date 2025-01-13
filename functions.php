@@ -7,6 +7,7 @@ function add_style() {
   wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false); //wordpress ajoute à la file le style
   wp_enqueue_style('footer-style', get_template_directory_uri() . '/footer.css', false);
   wp_enqueue_style('header-style', get_template_directory_uri() . '/header.css', false);
+  wp_enqueue_style('pages-style', get_template_directory_uri() . '/pages.css', false);
 }
 add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqueue_scripts il appelle le style
 

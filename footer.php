@@ -31,7 +31,7 @@
 
   </footer>
 
-  <?php wp_footer(); ?> <!-- c pour la barre wordpress en haut -->
+  <!--<//?php wp_footer(); ?>  c pour la barre wordpress en haut -->
 
   </body>
 </html>
