@@ -1,4 +1,43 @@
-footer {
+.footer {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 25rem;
+    margin-left: 2rem;
+}
+
+.footer_luma p, .footer_luma img {
+    margin-bottom: 1.5rem;
+}
+
+.footer_links, .footer_follow {
+    margin-top: 3rem;
+}
+
+.footer_links a {
+    position: relative;
     text-decoration: none;
+}
+
+.footer_links a::after { /*animation de survol*/
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #BEE9E7; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.footer_links a:hover::after {
+    transform: scaleX(1);
+}
+.footer_links li, .footer_follow p, .footer_follow img {
+    margin-bottom: 1rem;
+}
+
+.footer_follow img{
+    margin-right: 3rem;
+    margin-left: 1rem;
 }

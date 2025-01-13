@@ -26,3 +26,8 @@ button {
 button:hover{
     background-color: #EFE8DC;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

@@ -6,6 +6,7 @@
      <section>
         <h1> Accueil </h1>
         <button>Voir nos spectacles</button>
+    
      </section>
    </div>
 
