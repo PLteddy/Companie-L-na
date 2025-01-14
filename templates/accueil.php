@@ -2,13 +2,14 @@
  /* Template Name: Accueil */
 ?>
 <?php get_header (); ?>
-
-
-<section class="video-background">
+<div class="video-background">
     <video autoplay muted loop playsinline>
         <source src="<?php echo esc_url(get_field('home_background_video')); ?>" type="video/mp4">
         Votre navigateur ne supporte pas la lecture de cette vidéo.
     </video>
+</div>
+
+
     <div class="hero">
         <h1>Des spectacles où marionnettes et musique se rencontrent</h1>
         <a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">
@@ -18,7 +19,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/flèches.gif" alt="flèches">
         </a>
     </div>
-</section>
+
 
 <section class="headline-show" id="next-section">
     <h2>Spectacles à la une</h2>
@@ -78,8 +79,8 @@
                   <p>Donne vie à des personnages touchants et magiques</p>
                 </div>
               </div>
-              <!-- Slide 4 -->
-              <div class="swiper-slide tranding-slide">
+            <!-- Slide 4 -->
+            <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
                 </div>
@@ -89,7 +90,8 @@
                 </div>
               </div>
             </div>
-      
+            
+
             <div class="tranding-slider-control">
               <div class="swiper-button-prev slider-arrow">
                 <ion-icon name="arrow-back-outline"></ion-icon>

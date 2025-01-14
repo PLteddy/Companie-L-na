@@ -14,7 +14,6 @@ function add_style() {
 add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqueue_scripts il appelle le style
 
 function add_script() {
-  wp_enqueue_script('test-js', get_template_directory_uri() . '/test.js', array(), false);
   wp_enqueue_script('swiper-js', get_template_directory_uri() . '/swiper.js', array(), false);
   wp_enqueue_script('main-js', get_template_directory_uri() . '/main.js', array('swiper-js'), false);
 }

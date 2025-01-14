@@ -1,20 +1,30 @@
-
+/* Vidéo en arrière-plan */
 .video-background {
-    position: relative;
-    height: 100vh;
+    position: fixed; /* Rendre la vidéo toujours visible en arrière-plan */
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     overflow: hidden;
+    z-index: -1; /* Vidéo en arrière-plan */
 }
 
 .video-background video {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    z-index: -1;
-    pointer-events: none;
+    pointer-events: none; /* Empêche l'interaction avec la vidéo */
 }
 
+/* Header spécial pour */
+.header {
+    position: relative; /* Assure que le header est bien superposé */
+    z-index: 10; /* Plus haut que la vidéo */
+    background-color: transparent; /* Garder le fond transparent */
+}
 
 .content-section {
     position: relative;
@@ -106,11 +116,24 @@
 }
 
 .home_company {
-    background-color: #fff; 
     color: black;
     min-height: 100vh;
     width: 100%;
+    gap: 2rem;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
 }
+
+.home_company h2 {
+    color: white;
+    font-size: 90px;
+}
+
+.home_company p {
+    color: white;
+    font-size: 28px;
+}
+
 
 .video_culturelle {
     position: relative;

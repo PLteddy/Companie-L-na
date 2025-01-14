@@ -1,4 +1,3 @@
-//C'est le script du slider de la page d'accueil
 document.addEventListener("DOMContentLoaded", function() {
     var TrandingSlider = new Swiper('.tranding-slider', {
       effect: 'coverflow',
@@ -6,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
       centeredSlides: true,
       loop: true,
       slidesPerView: 'auto',
+      autoplay: {
+        delay: 20000, 
+        disableOnInteraction: false, // Continue autoplay after user interaction
+      },
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
@@ -22,6 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
-    console.log('ça marche main.js');
-  });
-  
+    console.log('Slider initialized with autoplay');
+});

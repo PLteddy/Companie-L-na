@@ -1,8 +1,9 @@
 .header {
-    margin-top: 0;
-    background-color: transparent;
-
+    position: relative; /* Nécessaire pour activer le z-index */
+    z-index: 10; /* Assurez-vous qu'il est au-dessus de la vidéo */
+    background-color: transparent; /* Pour ne pas bloquer la vue de la vidéo */
 }
+
 
 .header a {
     text-decoration: none;
@@ -15,7 +16,7 @@
     font-family: "Cherry Bomb One", serif;
     gap: 100px;
     margin-right: 3rem;
-    background-color: none;
+    background-color: transparent;
 
 }
 
