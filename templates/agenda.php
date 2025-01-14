@@ -3,7 +3,7 @@
 ?>
 <?php get_header (); ?>
  <div>
-     <section>
+     <section class="agenda">
         <h1> Agenda </h1>
 
         

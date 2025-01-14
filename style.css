@@ -5,6 +5,12 @@ Version: 1.0
 
 h1 {
     font-weight: bold;
+    color: #72A1B4;
+    font-weight: 100;
+    font-family: "Cherry Bomb One", serif;
+    font-size: 96px;
+    padding: 20px;
+
 }
 
 
