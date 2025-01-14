@@ -1,5 +1,7 @@
 .header {
     margin-top: 0;
+    background-color: transparent;
+
 }
 
 .header a {
@@ -13,6 +15,7 @@
     font-family: "Cherry Bomb One", serif;
     gap: 100px;
     margin-right: 3rem;
+    background-color: none;
 
 }
 

@@ -16,7 +16,9 @@
     <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('la_compagnie')->ID); ?>" data-key="la_compagnie">La compagnie</a></div>
     <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">Spectacles</a></div>
     <div class="logo-container">
-        <a href="<?php echo get_permalink(get_page_by_path('accueil')->ID); ?>" data-key="accueil"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo"> </a>
+      <a href="<?php echo get_permalink(get_page_by_path('accueil')); ?>">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
+      </a>
         <p>Chambéry et alentours</p>
     </div>
     <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>" data-key="agenda">Agenda</a></div>

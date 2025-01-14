@@ -1,11 +1,31 @@
 /*
-Theme Name: Companie Lüna
+Theme Name: Compagnie Lüma
 Version: 1.0
 */
 
 h1 {
     font-weight: bold;
 }
+
+
+h2 {
+    color: #72A1B4;
+    font-family: "Cherry Bomb One", serif;
+    font-size: 48px;
+}
+
+h3 {
+    color: #72A1B4;
+    font-family: "Cherry Bomb One", serif;
+    font-size: 36px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
 
 button {
     font-family: 'Montserrat', sans-serif;
@@ -31,3 +51,4 @@ a {
     text-decoration: none;
     color: black;
 }
+
