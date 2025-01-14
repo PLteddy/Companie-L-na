@@ -43,53 +43,73 @@
 </div>
 </section>
 
-<section class="home_company">
+<section class="home_company"> 
     <h2>La compagnie</h2>
     <section id="tranding">
         <div class="container">
-          <div class="swiper tranding-slider">
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+            <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="slider_title">Lien</h2>
+                            <p>Renforcer la complicité entre enfants et parents</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="slider_title">Ünivers</h2>
+                            <p>Plonger dans des mondes doux et sensibles</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="slider_title">Marionnette</h2>
+                            <p>Donne vie à des personnages touchants et magiques</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="slider_title">Animations</h2>
+                            <p>Offrir des instants joyeux et interactifs</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Nouvelle animation gif" />
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h2 class="slider_title">Nouveau</h2>
+                            <p>Un contenu original et captivant</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tranding-slide-content">
-                  <h2 class="slider_title">Lien</h2>
-                  <p>Renforcer la complicité entre enfants et parents</p>
-                </div>
-              </div>
-              <!-- Slide 2 -->
-              <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
-                </div>
-                <div class="tranding-slide-content">
-                  <h2 class="slider_title">Ünivers</h2>
-                  <p>Plonger dans des mondes doux et sensibles</p>
-                </div>
-              </div>
-              <!-- Slide 3 -->
-              <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
-                </div>
-                <div class="tranding-slide-content">
-                  <h2 class="slider_title">Marionnette</h2>
-                  <p>Donne vie à des personnages touchants et magiques</p>
-                </div>
-              </div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
-                </div>
-                <div class="tranding-slide-content">
-                  <h2 class="slider_title">Animations</h2>
-                  <p>Offrir des instants joyeux et interactifs</p>
-                </div>
-              </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+        </div>
+    </section>
+</section>
+
+
             
 
             <div class="tranding-slider-control">
