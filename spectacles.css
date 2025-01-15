@@ -23,12 +23,62 @@
 .title_shows {
     color: white;
 }
-
 .shows {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;   
-    justify-content: flex-end; 
-    padding-right: 2rem; 
     background-color: white;
 }
+.the_shows {
+    display: flex;
+    justify-content: center; /* Centre horizontalement les enfants */
+    align-items: center;     /* Centre verticalement les enfants */
+    background-color: white;
+    gap: 20px;               /* Ajoute de l'espace entre les divs enfants */
+    padding: 20px;
+  }
+  
+.line-separator {
+    width: 10rem;
+    height: 2px;
+    background-color: #000000;
+    margin: 1rem 0;
+}
+.show_right {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .show_right img:first-child {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .show_right p {
+    font-size: 1.5rem;
+    color: #6ea8c7;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  
+  .show_right img:last-child {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+  }
+  
+  /* Ligne horizontale entre les éléments */
+  .show_right::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    width: calc(100% - 80px);
+    top: 50%;
+    left: 60px;
+    z-index: -1;
+  }
+  .no_shows { 
+    align-content: center;
+    color: black;
+    min-height: 100vh;
+    width: 100%;
+  }

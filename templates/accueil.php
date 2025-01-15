@@ -50,7 +50,7 @@
     ?>
 
 
-<section class="home_company"> 
+<section class="home_company">  <!-- le css de toute la section est dans slider.css -->
     <h2>La compagnie</h2>
     <section id="tranding">
         <div class="container">
@@ -117,23 +117,6 @@
             </div>
         </div>
     </section>
-</section>
-
-
-            
-
-            <div class="tranding-slider-control">
-              <div class="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-              <div class="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </section>
 </section>
 
 

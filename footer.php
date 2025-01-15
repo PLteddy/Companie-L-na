@@ -14,7 +14,8 @@
     <li><a href="<?php echo get_permalink(get_page_by_path('la_compagnie')->ID); ?>" data-key="la_compagnie">La compagnie</a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">Spectacles</a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>" data-key="agenda">Agenda</a></li>
-    <li><a href="<?php echo get_permalink(get_page_by_path('contact')->ID); ?>" data-key="contact">Contact</a></li>
+    <li><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Action culturelle</a></li>
+    <li>Contactez-nous !</li>
 </ul>
 </nav>
 </div>

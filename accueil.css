@@ -115,25 +115,6 @@
     border-radius: 2rem;
 }
 
-.home_company {
-    color: black;
-    min-height: 100vh;
-    width: 100%;
-    gap: 2rem;
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
-}
-
-.home_company h2 {
-    color: white;
-    font-size: 90px;
-}
-
-.home_company p {
-    color: white;
-    font-size: 28px;
-}
-
 
 .video_culturelle {
     position: relative;
