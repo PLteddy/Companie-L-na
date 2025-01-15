@@ -2,7 +2,7 @@
 /* Template Name: Page Agenda */
 get_header(); 
 ?>
-<div class="agenda_header-background"></div>
+<div class="blue_header-background"></div>
 <div class="agenda">
     <h1>Agenda</h1>
     

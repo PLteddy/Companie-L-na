@@ -1,0 +1,188 @@
+
+/* Conteneur principal */
+.shows_details-container {
+    margin-left: 2rem ;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.shows_details {
+    position: relative;
+    width: 100%; /* Largeur du carrousel */
+    max-width: 1000px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur */
+    padding: 20px;
+    box-sizing: border-box;
+    align-content: center;
+    color: black;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  
+  /* Swiper container */
+  .shows_details .swiper {
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur disponible */
+  }
+  
+  /* Swiper slides */
+  .shows_details .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff; /* Couleur de fond des slides */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Animation fluide */
+  }
+  
+  .shows_details .swiper-slide:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+  }
+  
+  /* Contenu des slides */
+  .shows_details .tranding-slide-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shows_details .tranding-slide-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Adapte les images au conteneur */
+    max-width: 800px;
+    max-height: 400px;
+    z-index: -1;
+  }
+  
+  /* Style du contenu texte des slides */
+  .shows_details .tranding-slide-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: transparent;
+    bottom: 15rem;
+  }
+  
+  .shows_details .slider_title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .shows_details .tranding-slide-content p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Navigation spécifique */
+  .shows_details .swiper-button-next,
+  .shows_details .swiper-button-prev {
+    position: absolute; /* Fixe leur position */
+    top: 50%;
+    z-index: 10;
+    background: rgba(131, 10, 10, 0); /* Fond transparent */
+    border-radius: 50%;
+    padding: 10px;
+    visibility: visible ; /* Garantit qu'ils restent visibles */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Animation au survol */
+  }
+  
+  .shows_details .swiper-button-next {
+    right: 10px; /* Place le bouton "suivant" à droite */
+  }
+  
+  .shows_details .swiper-button-prev {
+    left: 10px; /* Place le bouton "précédent" à gauche */
+  }
+  
+  .shows_details .swiper-button-next:hover,
+  .shows_details .swiper-button-prev:hover {
+    opacity: 0.8; /* Légère transparence au survol */
+  }
+  
+  .shows_details .swiper-button-next.swiper-button-disabled,
+  .shows_details .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.3; /* Transparence quand ils sont désactivés */
+    pointer-events: none; /* Empêche le clic */
+  }
+  
+  /* Pagination */
+  .shows_details .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .shows_details .swiper-pagination-bullet {
+    background: #365f92;
+  }
+  
+  .shows_details .swiper-pagination-bullet-active {
+    background: #e7d5d5;
+  }
+  
+
+/* Section description */
+.shows_details-description {
+    flex: 2;
+}
+
+.shows_details-title {
+    color: #5C97BF;
+    font-weight: bold;
+}
+
+.shows_details-text {
+    margin: 0;
+    max-width: 600px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Section détails */
+.shows_details-details {
+    margin-top: 5rem;
+    flex: 1;
+    border-left: 2px solid #000;
+    padding-left: 20px;
+    margin-left: 2rem ;
+}
+
+.shows_details-detail-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.shows_details-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.shows_details-detail-text {
+    font-size: 24px;
+}
+
+.shows_details-link .shows_details-pdf-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 16px;
+}
+
+.shows_details-link .shows_details-pdf-link:hover {
+    text-decoration: underline;
+}
