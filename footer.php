@@ -3,6 +3,7 @@
     <section class="footer">
 
 <div class="footer_luma">
+  
 <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
 <p> Lüma un univers où petits et <br> grands rêvent ensemble. </p>
 <p>© 2025 - Compagnie Lüma</p>

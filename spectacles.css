@@ -1,0 +1,34 @@
+.shows_header-background {
+    position: fixed; /* Rendre la vidéo toujours visible en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Vidéo en arrière-plan */
+}
+
+.shows_header-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Empêche l'interaction avec la vidéo */
+}
+
+
+
+.title_shows {
+    color: white;
+}
+
+.shows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   
+    justify-content: flex-end; 
+    padding-right: 2rem; 
+    background-color: white;
+}

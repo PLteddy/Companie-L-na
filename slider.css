@@ -14,11 +14,12 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Section du slider */
 #tranding {
+  position: relative;
   width: 100%; /* Largeur du slider */
   max-width: 1000px; /* Largeur maximale du conteneur */
   margin: 0 auto; /* Centre le conteneur */
@@ -69,11 +70,11 @@
 }
 
 .tranding-slide-content {
-  position: relative; /* Pour que le texte reste au-dessus de la vidéo */
+  position: relative;
   z-index: 1;
   text-align: center;
   background-color: transparent;
-  padding: 20px;
+  bottom: 15rem;
 }
 
 .slider_title {
@@ -85,24 +86,28 @@
   font-size: 1.2rem;
   margin: 0;
 }
-/* Swiper navigation */
-.swiper-button-next, .swiper-button-prev {
-  color: #333;
+
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover {
-  color: #000;
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
 }
 
-/* Swiper pagination */
-.swiper-pagination {
-  bottom: 10px;
+.tranding-slider-control .slider-arrow::after {
+  content: '';
 }
 
-.swiper-pagination-bullet {
-  background: #333;
-}
-
-.swiper-pagination-bullet-active {
-  background: #000;
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
 }

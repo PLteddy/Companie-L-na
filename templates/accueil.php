@@ -23,7 +23,7 @@
 
 <section class="headline-show" id="next-section">
     <h2>Spectacles à la une</h2>
-    <div class="show_container">
+<div class="show_container">
     <div class="show_picture">
         <img src="<?php echo esc_url(get_field('headline_show_picture')); ?>" alt="Photo du spectacles à la une">
         <button>Voir plus de détails</button>
@@ -43,6 +43,13 @@
 </div>
 </section>
 
+<?php $gifs = get_field("gifs");
+    // echo '<pre>';
+   // var_dump($gifs);
+    //echo '</pre>';
+    ?>
+
+
 <section class="home_company"> 
     <h2>La compagnie</h2>
     <section id="tranding">
@@ -52,7 +59,7 @@
                     <!-- Slide 1 -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        <img src=<?php echo $gifs["gif_link"];?> alt="Animation Gif">
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title">Lien</h2>
@@ -62,7 +69,8 @@
                     <!-- Slide 2 -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        <img src=<?php echo $gifs["gif_universe"];?> alt="Animation Gif">
+
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title">Ünivers</h2>
@@ -72,7 +80,8 @@
                     <!-- Slide 3 -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        <img src=<?php echo $gifs["gif_puppet"];?> alt="Animation Gif">
+
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title">Marionnette</h2>
@@ -82,7 +91,8 @@
                     <!-- Slide 4 -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Animation gif" />
+                        <img src=<?php echo $gifs["gif_animation"];?> alt="Animation Gif">
+
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title">Animations</h2>
@@ -92,7 +102,7 @@
                     <!-- Slide 5 -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/giphy.gif" alt="Nouvelle animation gif" />
+                        <img src=<?php echo $gifs["gif_luma"];?> alt="Animation Gif">
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title">Nouveau</h2>
