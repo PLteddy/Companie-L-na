@@ -3,16 +3,16 @@
 
 //Pour lier le css
 function add_style() {
-  wp_enqueue_style('reset-style', get_template_directory_uri() . '/reset.css', false);
-  wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false); //wordpress ajoute à la file le style
-  wp_enqueue_style('footer-style', get_template_directory_uri() . '/footer.css', false);
-  wp_enqueue_style('header-style', get_template_directory_uri() . '/header.css', false);
-  wp_enqueue_style('accueil-style', get_template_directory_uri() . '/accueil.css', false);
-  wp_enqueue_style('slider-style', get_template_directory_uri() . '/slider.css', false);
-  wp_enqueue_style('swiper-style', get_template_directory_uri() . '/swiper.css', false);
-  wp_enqueue_style('agenda-style', get_template_directory_uri() . '/agenda.css', false);
-  wp_enqueue_style('spectacles-style', get_template_directory_uri() . '/spectacles.css', false);
-  wp_enqueue_style('spectacles_details-style', get_template_directory_uri() . '/spectacles_details.css', false);
+  wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css', false);
+  wp_enqueue_style('main-style', get_template_directory_uri() . '/css/style.css', false); //wordpress ajoute à la file le style
+  wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', false);
+  wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css', false);
+  wp_enqueue_style('accueil-style', get_template_directory_uri() . '/css/accueil.css', false);
+  wp_enqueue_style('slider-style', get_template_directory_uri() . '/css/slider.css', false);
+  wp_enqueue_style('swiper-style', get_template_directory_uri() . '/css/swiper.css', false);
+  wp_enqueue_style('agenda-style', get_template_directory_uri() . '/css/agenda.css', false);
+  wp_enqueue_style('spectacles-style', get_template_directory_uri() . '/css/spectacles.css', false);
+  wp_enqueue_style('spectacles_details-style', get_template_directory_uri() . '/css/spectacles_details.css', false);
 }
 add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqueue_scripts il appelle le style
 

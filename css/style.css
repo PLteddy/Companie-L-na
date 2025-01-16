@@ -3,6 +3,20 @@ Theme Name: Compagnie Lüma
 Version: 1.0
 */
 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 h1 {
     font-weight: bold;
     color: #72A1B4;

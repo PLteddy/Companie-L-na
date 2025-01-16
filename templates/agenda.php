@@ -3,7 +3,7 @@
 get_header(); 
 ?>
 <div class="blue_header-background"></div>
-<div class="agenda">
+<section class="agenda">
     <h1>Agenda</h1>
     
     <?php if (have_rows('agenda_spectacles')): 
@@ -46,6 +46,6 @@ get_header();
         echo "</ul></div>"; // Ferme la dernière liste
     endif;
     ?>
-</div>
+</section>
 
 <?php get_footer(); ?>

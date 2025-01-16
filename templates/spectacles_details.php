@@ -5,79 +5,34 @@
 
  <div class="blue_header-background"></div>
      <section class="shows_details">
-
+     <?php $pictures_carousel = get_field("pictures_carousel");
+    //echo '<pre>';
+   //var_dump($pictures_carousel);
+    //echo '</pre>';
+    ?>
      <section id="tranding">
         <div class="shows_details-container">
             <div class="swiper tranding-slider">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide tranding-slide">
-                     <?php
-                        // Vérifie si le groupe carousel_pictures existe
-                     if (have_rows('carousel_pictures')) :
-                        // Récupère la première entrée du groupe
-                         the_row(); // Passe au premier élément du groupe
-                        $image1 = get_sub_field('carousel_picture-1'); // Remplace par le nom exact de ton champ image
-
-                        if ($image1) :
-                        // Affiche l'image
-                           echo '<img src="' . esc_url($image1['url']) . '" alt="' . esc_attr($image1['alt']) . '">';
-                     else :
-                        // Fallback si l'image n'existe pas
-                        echo '<img src="' . get_template_directory_uri() . '/assets/giphy.gif" alt="icone age">';
-                     endif;
-                     else :
-                     // Fallback si le groupe n'existe pas
-                     echo '<img src="' . get_template_directory_uri() . '/assets/gif2.gif" alt="icone age">';
-                      endif;
-                     ?>
-                     </div>
-
+                        <div class="tranding-slide-img">
+                        <img src=<?php echo $pictures_carousel["carousel_picture-1"];?> alt="Animation Gif">
+                        </div>
+                    </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide tranding-slide">
-                     <?php
-                        // Vérifie si le groupe carousel_pictures existe
-                     if (have_rows('carousel_pictures')) :
-                        // Récupère la première entrée du groupe
-                         the_row(); // Passe au premier élément du groupe
-                        $image2 = get_sub_field('carousel_picture-2'); // Remplace par le nom exact de ton champ image
-
-                        if ($image2) :
-                        // Affiche l'image
-                           echo '<img src="' . esc_url($image2['url']) . '" alt="' . esc_attr($image2['alt']) . '">';
-                     else :
-                        // Fallback si l'image n'existe pas
-                        echo '<img src="' . get_template_directory_uri() . '/assets/giphy.gif" alt="icone age">';
-                     endif;
-                     else :
-                     // Fallback si le groupe n'existe pas
-                     echo '<img src="' . get_template_directory_uri() . '/assets/gif2.gif" alt="icone age">';
-                      endif;
-                     ?>
-                     </div>
+                        <div class="tranding-slide-img">
+                        <img src=<?php echo $pictures_carousel["carousel_picture-2"];?> alt="Animation Gif">
+                        </div>
+                    </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide tranding-slide">
-                     <?php
-                        // Vérifie si le groupe carousel_pictures existe
-                     if (have_rows('carousel_pictures')) :
-                        // Récupère la première entrée du groupe
-                         the_row(); // Passe au premier élément du groupe
-                        $image3 = get_sub_field('carousel_picture-3'); // Remplace par le nom exact de ton champ image
-
-                        if ($image3) :
-                        // Affiche l'image
-                           echo '<img src="' . esc_url($image3['url']) . '" alt="' . esc_attr($image3['alt']) . '">';
-                     else :
-                        // Fallback si l'image n'existe pas
-                           echo '<img src="' . get_template_directory_uri() . '/assets/giphy.gif" alt="icone age">';
-                     endif;
-                     else :
-                     // Fallback si le groupe n'existe pas
-                     echo '<img src="' . get_template_directory_uri() . '/assets/gif2.gif" alt="icone age">';
-                      endif;
-                     ?>
-                     </div>
-                     </div>
+                        <div class="tranding-slide-img">
+                        <img src=<?php echo $pictures_carousel["carousel_picture-3"];?> alt="Animation Gif">
+                        </div>
+                    </div>
+               </div>
                 <!-- Pagination and Navigation -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
