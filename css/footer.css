@@ -2,6 +2,13 @@
 footer {
     background-color: white;
 }
+
+.barre {
+    height: 10px; /* Hauteur de la barre */
+    background-color: #72A1B4; /* Couleur de la barre */
+    width: 100%; /* Largeur de la barre */
+    margin-bottom: 10px;
+}
 .footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;

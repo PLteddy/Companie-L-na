@@ -4,7 +4,7 @@
 //Pour lier le css
 function add_style() {
   wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css', false);
-  wp_enqueue_style('main-style', get_template_directory_uri() . '/css/style.css', false); //wordpress ajoute à la file le style
+  wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css', false); //wordpress ajoute à la file le style
   wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', false);
   wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css', false);
   wp_enqueue_style('accueil-style', get_template_directory_uri() . '/css/accueil.css', false);
@@ -26,6 +26,6 @@ add_action('wp_enqueue_scripts', 'add_script');
 //Pour rajouter une taille d'image name, height, width, crop
   add_image_size( 'custom_size', 100, 300 , true ) 
 
-
 ?>
+
 
