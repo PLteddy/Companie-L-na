@@ -1,0 +1,78 @@
+.action {
+    background-color: white;
+
+  }
+
+  .action p{
+    font-size: 24px;
+  }
+
+  .one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+  .one p  {
+    margin-top: 2rem;
+    max-width: 750px;
+    text-align: center;
+  }
+
+  .two {
+    display: flex;
+    background-color: #72A1B4;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    gap: 5rem;
+    
+  }
+  .two h2 {
+    color: white;
+ 
+  }
+  .two_text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .two_text p {
+    width: 700px;
+    color: white;
+  }
+
+  .three {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    gap: 5rem;
+    
+  }
+
+  .three p {
+    color: black;
+    
+  }
+
+  .three h2{
+    text-align: right;
+    
+  }
+
+  .contact {
+    margin-top: 2rem;
+  }

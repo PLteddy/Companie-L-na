@@ -13,6 +13,7 @@ function add_style() {
   wp_enqueue_style('agenda-style', get_template_directory_uri() . '/css/agenda.css', false);
   wp_enqueue_style('spectacles-style', get_template_directory_uri() . '/css/spectacles.css', false);
   wp_enqueue_style('spectacles_details-style', get_template_directory_uri() . '/css/spectacles_details.css', false);
+  wp_enqueue_style('action-style', get_template_directory_uri() . '/css/action.css', false);
 }
 add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqueue_scripts il appelle le style
 
@@ -24,8 +25,7 @@ add_action('wp_enqueue_scripts', 'add_script');
 
 
 //Pour rajouter une taille d'image name, height, width, crop
-  add_image_size( 'custom_size', 100, 300 , true ) 
-
+  add_image_size( 'custom_size', 400, 400 , true ) 
 ?>
 
 

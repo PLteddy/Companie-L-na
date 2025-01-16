@@ -46,7 +46,7 @@ endif; // Fin
             <?php foreach ($headline_show as $headline_show): ?>
                 <div class="show_container">
                     <div class="show_picture">
-                        <img src="<?php echo esc_url($headline_show['photo']); ?>" alt="Photo du spectacle à la une">
+                        <img src="<?php echo esc_url($headline_show['photo']['sizes']['custom_size']); ?>" alt="Photo du spectacle à la une">
                         <?php if (isset($headline_show['lien']['url'])) : //Pour le lien ici ça doit retourné un tableau pas un url?> 
                             <button onclick="window.location.href='<?php echo esc_url($headline_show['lien']['url']); ?>'" target="<?php echo esc_attr($headline_show['lien']['target']); ?>">
                                 Voir plus de détails
@@ -79,9 +79,9 @@ endif; // Fin
     //echo '</pre>';
     ?>
 <?php $carousel = get_field("home_carousel");
-      echo '<pre>';
-    var_dump($carousel);
-    echo '</pre>';
+      //echo '<pre>';
+    //var_dump($carousel);
+    //echo '</pre>';
     ?>
 
 <section class="home_company">  <!-- le css de toute la section est dans slider.css -->
@@ -140,7 +140,7 @@ endif; // Fin
                         </div>
                         <div class="tranding-slide-content">
                             <h2 class="slider_title"></h2>
-                            <p>Plongez dans l’univers poétiques de Lüma</p>
+                            <button><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Découvrir</button>
                         </div>
                     </div>
                 </div>
