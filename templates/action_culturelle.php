@@ -9,7 +9,7 @@
     </video>        
 </div>
 
-<h1> Action culturelle </h1>   
+<h1 class="actionh1"> Action culturelle </h1>   
 <section class="action">
 <div class="one"> 
     <?php 
@@ -125,11 +125,36 @@ if (!empty($four)):
     </div>
     <?php endif; ?>
 
+    <div class="one"> 
+    <?php 
+        if (have_rows('action_contact')):
+            $contact = []; // Stocke les spectacles pour tri
+            while (have_rows('action_contact')): the_row();
+                $contact[] = [
+                    'title' => get_sub_field('action_contact-title'), // Titre
+                    'text' => get_sub_field('action_contact-text'), // Contenu WYSIWYG
+                    'email' => get_sub_field('contact_email'), // email
+                ];
+            endwhile;
+        endif;
 
-<div class=one>
-<h2>Contactez-nous</h2>
-<p>Envie de créer une intervention culturelle unique et enrichissante ? Ecrivez-nous dès maintenant pour imaginer ensemble un projet sur mesure !</p>
-<button class=contact>C’est par ici !</button class=contact>
+        if (!empty($contact)):
+    ?>
+        <h2><?php echo esc_html($contact[0]['title']); ?></h2>
+        <div><?php echo wp_kses_post($contact[0]['text']); ?></div>
+        
+        <?php if (!empty($contact[0]['email'])): ?>
+            <button class="contact-button"><a href="mailto:<?php echo esc_attr($contact[0]['email']); ?>?subject=Demande d'informations&body=Bonjour, j'aimerais obtenir plus de détails." 
+               class="contact-button">
+                C’est par ici !
+            </a></button>
+        <?php else: ?>
+            <button class="contact-button disabled" disabled>Contact indisponible</button>
+        <?php endif; ?>
+    <?php 
+        endif; 
+    ?>
 </div>
+
 </section>
 <?php get_footer(); ?>

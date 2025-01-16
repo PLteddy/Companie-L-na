@@ -2,7 +2,9 @@
     background-color: white;
 
   }
-
+.actionh1 {
+  color: white;
+}
   .action p{
     font-size: 24px;
   }
@@ -73,6 +75,7 @@
     
   }
 
-  .contact {
+  .contact-button {
     margin-top: 2rem;
+    
   }
