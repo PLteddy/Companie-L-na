@@ -5,7 +5,7 @@
 <div class="barre"></div>
 <section class="footer">
 <div class="footer_luma">
-<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
+<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
 <p> Lüma un univers où petits et <br> grands rêvent ensemble. </p>
 <p>© 2025 - Compagnie Lüma</p>
 </div>
@@ -16,7 +16,10 @@
     <li><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">Spectacles</a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>" data-key="agenda">Agenda</a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Action culturelle</a></li>
-    <li>Contactez-nous !</li>
+    <li><a href="mailto:compagnieluma@gmail.com?subject=Demande d'informations&body=Bonjour, j'aimerais obtenir plus de détails.">
+    Contactez-nous !
+    </a></li>
+    <li><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Action culturelle</a></li>
 </ul>
 </nav>
 </div>

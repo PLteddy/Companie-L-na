@@ -1,0 +1,92 @@
+
+.company p{
+    font-size: 24px;
+}
+
+.c_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+  .c_one p  {
+    margin-top: 2rem;
+    max-width: 750px;
+  }
+
+  .c_two {
+    display: flex;
+    background-color: #72A1B4;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+  }
+  
+  .c_two-left {
+    align-content: center;
+    text-align: center;
+    flex: 1; /* Ajuster la taille de la colonne gauche */
+  }
+  .c_two-left h2{
+    color: white;
+  }
+  
+  .c_two-left img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%; /* Rond pour la photo */
+
+  }
+  
+  .c_two-right {
+    align-content: center;
+    width: 650px;
+    padding-right: 10rem;
+  }
+  
+  .c_two-right p {
+    margin: 0;
+  }
+  
+  .c_two a {
+    text-decoration: underline;
+  }
+
+  .c_three {
+    display: flex;
+    min-height: 80vh;    /* Full viewport height */
+    width: 100%;         /* Full width */
+    padding: 2rem;       /* Add padding */
+  }
+  .c_three-left {
+    align-content: center;
+    text-align: center;
+    flex: 1; /* Ajuster la taille de la colonne gauche */
+  }
+  .c_three-left img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%; /* Rond pour la photo */
+
+  }
+  
+  .c_three-right {
+    align-content: center;
+    width: 650px;
+    padding-left: 10rem;
+  }
+  
+  .c_three-right p {
+    margin: 0;
+  }
+  
+  .c_three a {
+    text-decoration: underline;
+  }

@@ -97,7 +97,7 @@
                $technical_sheet = get_field('technical_sheet');
     
                 if (!empty($technical_sheet)) {
-               echo '<a class="shows_details-pdf-link" href="' . esc_url($technical_sheet) . '">Fiche technique (.pdf)</a>';
+                    echo '<a class="shows_details-pdf-link" href="' . esc_url($technical_sheet) . '" target="_blank" rel="noopener noreferrer">Fiche technique (.pdf)</a>';
                } else {
                echo 'Aucune fiche technique disponible pour ce spectacle.';
                }

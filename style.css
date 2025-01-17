@@ -90,3 +90,9 @@ a {
     background-color: #72A1B4; 
     z-index: 1; 
 }
+
+.logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}

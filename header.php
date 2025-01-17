@@ -17,7 +17,7 @@
     <div class="menu-item"><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>" data-key="spectacles">Spectacles</a></div>
     <div class="logo-container">
       <a href="<?php echo get_permalink(get_page_by_path('accueil')); ?>">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
+      <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
       </a>
         <p>Chambéry et alentours</p>
     </div>
