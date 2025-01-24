@@ -179,11 +179,12 @@
 }
 /* Drop-down styles */
 .drop-down {
+  z-index: 50;
     padding: 25px;
     position: absolute;
     width: 100%;
     height: auto;
-    background: var(--blue);
+    background: white;
     top: -100%;
     transition: top 0.4s ease-in-out;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -203,16 +204,14 @@
   
   .drop-down a {
     font-size: 18pt;
-    color: blue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-family: 'Carrois Gothic', sans-serif;
   }
   
   .drop-down h1 {
-    font-family: 'Kotta One', serif;
     font-size: 22pt;
     text-align: center;
-    color: blue;
+    color: rgb(0, 0, 0);
   }
   
   /* Menu trigger styles */
@@ -223,10 +222,10 @@
     width: 75px;
     height: 75px;
     text-align: center;
-    border: 3px solid red;
-    background: var(--blue);
+    border: 3px solid black;
+    background: white;
     z-index: 999;
-    color: red;
+    color: black;
   }
   
   .menu a {
@@ -234,7 +233,7 @@
     text-decoration: none;
     font-size: 48pt;
     font-weight: bold;
-    color: red;
+    color: black;
   }
   
   .menu .close {
