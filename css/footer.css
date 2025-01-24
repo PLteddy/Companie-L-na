@@ -52,3 +52,32 @@ footer {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Empile les éléments verticalement */
+        gap: 1rem; /* Réduit encore l'espace entre les éléments */
+    }
+
+    .footer_luma, .footer_links, .footer_follow {
+        text-align: center; /* Centre le texte */
+    }
+
+    .footer_links, .footer_follow {
+        margin-top: 1rem; /* Réduit la marge supérieure */
+    }
+
+    .footer_follow img {
+        margin: 0 0.5rem; /* Ajuste les marges des icônes */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 14px; /* Réduit la taille de la police pour les très petits écrans */
+    }
+
+    .footer_links a::after {
+        height: 1px; /* Réduit l'épaisseur de la ligne de survol */
+    }
+}

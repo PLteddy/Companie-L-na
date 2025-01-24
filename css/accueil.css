@@ -19,12 +19,7 @@
     pointer-events: none; /* Empêche l'interaction avec la vidéo */
 }
 
-/* Header spécial pour */
-.header {
-    position: relative; /* Assure que le header est bien superposé */
-    z-index: 10; /* Plus haut que la vidéo */
-    background-color: transparent; /* Garder le fond transparent */
-}
+
 
 .content-section {
     position: relative;
@@ -58,7 +53,14 @@
     min-height: 100vh;
     width: 100%;
 }
+/* Mobile styles */
+@media (max-width: 768px) {
+    .headline-show {
+        min-height: 100vh; /* Ensure full viewport height */
+        padding: 1rem;     /* Optional padding for mobile */
+    }
 
+}
 .headline-show h2{
     padding: 2rem;
     margin-left: 2rem;
@@ -149,3 +151,115 @@
     z-index: 1;
 }
 
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+        width: 90%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .headline-show h2 {
+        padding: 1rem;
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+
+    .show_container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem auto;
+        margin-right: 0;
+    }
+
+    .show_picture img {
+        width: 90%;
+        height: auto;
+    }
+
+    .show_resume {
+        width: 90%;
+    }
+
+    .show_duration {
+        font-size: 16px;
+        width: auto;
+    }
+}
+
+/* Pour les tablettes (écrans moyens) */
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .show_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-right: 0;
+    }
+
+    .show_picture img {
+        width: 70%;
+        height: auto;
+    }
+
+    .show_resume {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: clamp(24px, 5vw, 36px);
+        padding: 1rem;
+    }
+
+    .show_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .show_picture img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .show_details {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .show_duration {
+        font-size: 14px;
+        padding: 0.5rem;
+        width: auto;
+    }
+
+    .show_resume {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .headline-show h2 {
+        text-align: center;
+    }
+
+    .show_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .show_picture img {
+        max-width: 90%;
+    }
+}

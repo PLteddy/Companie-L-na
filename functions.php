@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'add_style' ); // au moment où il charge enqu
 function add_script() {
   wp_enqueue_script('swiper-js', get_template_directory_uri() . '/swiper.js', array(), false);
   wp_enqueue_script('main-js', get_template_directory_uri() . '/main.js', array('swiper-js'), false);
+   wp_enqueue_script('menu-burger-js', get_template_directory_uri() . '/menu-burger.js', array('jquery'), false);
 }
 add_action('wp_enqueue_scripts', 'add_script');
 

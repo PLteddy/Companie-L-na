@@ -81,6 +81,10 @@ a {
     color: black;
 }
 
+li {
+    list-style:none;
+}
+
 .blue_header-background {
     position: absolute;
     top: 0;

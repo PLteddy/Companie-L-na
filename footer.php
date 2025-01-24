@@ -19,7 +19,6 @@
     <li><a href="mailto:compagnieluma@gmail.com?subject=Demande d'informations&body=Bonjour, j'aimerais obtenir plus de détails.">
     Contactez-nous !
     </a></li>
-    <li><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Action culturelle</a></li>
 </ul>
 </nav>
 </div>
@@ -30,6 +29,11 @@
 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/icon_facebook.png" alt="icone facebook"></a>
 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/icon_instagram.png" alt="icone instagram"></a>
 <a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/icon_youtube.png" alt="icone youtube"></a>
+<?php 
+$mentions_page = get_page_by_path('mentions-legales'); 
+if ($mentions_page): ?>
+    <li><a href="<?php echo get_permalink($mentions_page->ID); ?>">Mentions légales</a></li>
+<?php endif; ?>
 </nav>
 </div>
 </section>

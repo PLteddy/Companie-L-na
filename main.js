@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log('Slider initialized with autoplay');
 });
+
