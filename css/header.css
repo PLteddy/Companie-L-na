@@ -198,20 +198,19 @@
   .drop-down li {
     height: 50px;
     line-height: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
   }
   
   .drop-down a {
     font-size: 18pt;
-    color: rgb(0, 0, 0);
+    color: #72A1B4;
     text-decoration: none;
   }
   
   .drop-down h1 {
     font-size: 22pt;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color:#72A1B4;
   }
   
   /* Menu trigger styles */
@@ -225,7 +224,7 @@
     border: 3px solid black;
     background: white;
     z-index: 999;
-    color: black;
+    color: #72A1B4;
   }
   
   .menu a {
@@ -233,7 +232,7 @@
     text-decoration: none;
     font-size: 48pt;
     font-weight: bold;
-    color: black;
+    color: #72A1B4;
   }
   
   .menu .close {

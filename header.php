@@ -56,6 +56,12 @@
   <div class="drop-down">
     <nav role="navigation">
       <h1>- Navigation -</h1>
+      <div class="logo-container">
+          <a href="<?php echo get_permalink(get_page_by_path('accueil')); ?>">
+            <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="Logo">
+          </a>
+          <p>Chambéry et alentours</p>
+        </div>
       <ul>
         <li><a href="<?php echo get_permalink(get_page_by_path('la_compagnie')->ID); ?>">La compagnie</a></li>
         <li><a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>">Spectacles</a></li>

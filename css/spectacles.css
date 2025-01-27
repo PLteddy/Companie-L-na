@@ -1,27 +1,44 @@
+/* Video Background */
 .shows_header-background {
-    position: fixed; /* Rendre la vidéo toujours visible en arrière-plan */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Vidéo en arrière-plan */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .shows_header-background video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none; /* Empêche l'interaction avec la vidéo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Utiliser la largeur de la fenêtre */
+  height: 100vh; /* Utiliser la hauteur de la fenêtre */
+  object-fit: cover;
+  pointer-events: none;
 }
+.title_shows {
+  color: white;
+  font-size: 96px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .shows_header-background {
+    height: auto; /* Allow scrolling if content exceeds viewport */
+  }
 
-
+  .shows_header-background video {
+    object-fit: contain; /* Prevent excessive cropping on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
 
 .title_shows {
     color: white;
+    font-size: 44px;
 }
 .shows {
     background-color: white;
@@ -82,4 +99,45 @@
     min-height: 100vh;
     width: 100%;
   }
-  
+  /* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+  .the_shows {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .show_right {
+      width: calc(50% - 20px);
+  }
+
+  .title_shows {
+    color: white;
+    font-size: 44px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .show_right {
+      width: calc(33.333% - 20px);
+  }
+
+  .title_shows {
+      font-size: 2rem;
+  }
+}
+
+/* Pour les très petits écrans */
+@media screen and (max-width: 480px) {
+  .show_right p {
+      font-size: 1.2rem;
+  }
+
+  .show_right img:first-child {
+      width: 40px;
+      height: 40px;
+  }
+
+  .line-separator {
+      width: 8rem;
+  }
+}

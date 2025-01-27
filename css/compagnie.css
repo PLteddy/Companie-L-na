@@ -114,6 +114,9 @@
   .c_one p {
       font-size: 18px;
   }
+  .c_one h1 {
+    font-size: 60px;
+  }
 }
 
 /* Media Query pour les écrans de moins de 480px (petits téléphones) */
