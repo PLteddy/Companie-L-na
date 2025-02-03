@@ -7,10 +7,24 @@
 
 <head>
   <meta charset="utf-8">
-  <title><?php bloginfo('name'); ?></title>
+  <title>Compagnie Lüma – Offrez à vos enfants un moment inoubliable</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Découvrez Lüma, une compagnie de spectacles spécialisée dans les marionnettes et les animations pour enfants, proposant des activités captivantes dans le bassin chambérien.">
+  
+  <meta name="keywords" content="spectacle marionnettes, animation enfants, théâtre de marionnettes, compagnie Lüma, divertissement famille, spectacle jeune public, bassin chambérien">
+  
+  <meta name="author" content="Compagnie Lüma">
+  
+  <meta property="og:title" content="Compagnie Lüma – Offrez à vos enfants un moment inoubliable">
+  <meta property="og:description" content="Des spectacles de marionnettes enchanteurs pour enfants et familles dans le bassin chambérien.">
+  <meta property="og:url" content="https://www.compagnie-luma.fr/">
+  <meta property="og:type" content="website">
+
+
   <?php wp_head(); ?>
 </head>
+
 
 <body>
   <header>

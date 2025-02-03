@@ -69,6 +69,8 @@ if (!empty($two)):
         </div>
     </div>
     <?php endif; ?>
+
+    <img  class="wave" src="<?php echo get_template_directory_uri(); ?>/assets/wave.svg" alt="wave" class="wave">
     <?php 
 $three = []; // Tableau vide pour stocker les éléments
 if (have_rows('action_three')): 
@@ -124,6 +126,8 @@ if (!empty($four)):
         </div>
     </div>
     <?php endif; ?>
+
+    <img  class="wave" src="<?php echo get_template_directory_uri(); ?>/assets/wave.svg" alt="wave" class="wave">
 
     <div class="one"> 
     <?php 

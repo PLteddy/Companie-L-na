@@ -221,10 +221,8 @@
     width: 75px;
     height: 75px;
     text-align: center;
-    border: 3px solid black;
-    background: white;
     z-index: 999;
-    color: #72A1B4;
+    color: #000000;
   }
   
   .menu a {
@@ -232,7 +230,7 @@
     text-decoration: none;
     font-size: 48pt;
     font-weight: bold;
-    color: #72A1B4;
+    color: #D1AE86;
   }
   
   .menu .close {

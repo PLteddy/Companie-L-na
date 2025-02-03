@@ -50,6 +50,7 @@
         </div>
     <?php endif; ?>
 </div>
+<img  class="wave" src="<?php echo get_template_directory_uri(); ?>/assets/wave.svg" alt="wave" class="wave">
 <?php 
       //$action_groupe = get_field("c_three");
         //echo '<pre>'; 
