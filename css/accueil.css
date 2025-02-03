@@ -51,8 +51,12 @@
     background-color: #EDEFF9; 
     color: black;
     min-height: 100vh;
+    max-width: 100vw; /* Empêche le dépassement horizontal */
     width: 100%;
+    overflow: hidden; /* Évite tout débordement */
+    box-sizing: border-box; /* Prévient les problèmes liés au padding */
 }
+
 /* Mobile styles */
 @media (max-width: 768px) {
     .headline-show {
@@ -122,15 +126,18 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 600px; /* Augmentez la hauteur */
+    min-height: 600px;
+    max-width: 100vw; /* Empêche le dépassement horizontal */
     display: flex;
-    flex-direction: column; /* Les éléments se positionnent en colonne */
-    align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
     background-color: white;
-    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    padding: 20px;
+    box-sizing: border-box; /* Empêche le padding d'affecter la largeur */
 }
+
 .video_culturelle h2 {
     margin-bottom: 20px; /* Ajoute un espace sous le titre */
     color: #fff; /* Si nécessaire, mettez une couleur visible */
@@ -141,15 +148,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     object-fit: cover;
+    overflow: hidden;
     z-index: -1;
 }
-.discover-button {
-    position: relative;
-    z-index: 1;
-}
+
+
 
 /* Pour les petits écrans (smartphones) */
 @media (max-width: 600px) {

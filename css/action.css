@@ -135,6 +135,16 @@
     min-height: auto;
   }
 
+  .two_img {
+    width: 100%;
+    max-width: 100vw; /* Empêche tout débordement horizontal */
+    overflow: hidden; /* Évite que le contenu dépasse */
+    box-sizing: border-box; /* Garde une mise en page stable même avec du padding */
+    display: flex; /* Si c'est un conteneur d'images */
+    flex-wrap: wrap; /* Permet aux images de s'adapter sur mobile */
+    justify-content: center; /* Centre les images */
+    align-items: center; /* Aligne verticalement */
+}
   .two_text {
     gap: 1rem;
   }

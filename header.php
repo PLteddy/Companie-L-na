@@ -39,16 +39,6 @@
     </section>
 
     <!-- Header version Mobile -->
-    <section class="header header-mobile">
-      <div class="mobile-menu">
-        <a href="<?php echo get_permalink(get_page_by_path('la_compagnie')->ID); ?>">La compagnie</a>
-        <a href="<?php echo get_permalink(get_page_by_path('spectacles')->ID); ?>">Spectacles</a>
-        <a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>">Agenda</a>
-        <a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>">Action culturelle</a>
-      </div>
-    </section>
-  </header>
-
   <div class="menu">
     <a class="trigger" href="#">&equiv;</a>
     <a class="close" href="#">&times;</a>
