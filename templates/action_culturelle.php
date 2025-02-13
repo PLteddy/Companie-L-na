@@ -9,7 +9,7 @@
     </video>        
 </div>
 
-<h1 class="actionh1"> Action culturelle </h1>   
+<h1 class="actionh1"><?php the_title(); ?></h1>
 <section class="action">
 <div class="one"> 
     <?php 
