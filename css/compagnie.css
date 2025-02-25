@@ -92,6 +92,9 @@
 
 /* Media Query pour les écrans de moins de 768px (tablettes et téléphones) */
 @media (max-width: 768px) {
+  .blue_header-background {
+      height: 320px;
+  }
   .c_two-left img, .c_three-left img {
       max-width: 250px;
   }

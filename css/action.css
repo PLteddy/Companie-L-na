@@ -54,7 +54,14 @@
 
 .two_img {
   border-radius: 20px;
+  overflow: hidden; /* Ensure content respects border radius */
 }
+
+/* Ensure images inside .two_img also respect border radius */
+.two_img img {
+  border-radius: inherit;
+}
+
 .two h2 {
   color: white;
   z-index: 2;
@@ -152,6 +159,7 @@
     gap: 2rem;
     padding: 1rem;
     min-height: auto;
+    height: 120vh;
   }
 
   .two_img {

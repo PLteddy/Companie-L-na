@@ -17,7 +17,7 @@
     <li><a href="<?php echo get_permalink(get_page_by_path('agenda')->ID); ?>" data-key="agenda">Agenda</a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('action_culturelle')->ID); ?>" data-key="action_culturelle">Action culturelle</a></li>
     <li><a href="mailto:compagnieluma@gmail.com?subject=Demande d'informations&body=Bonjour, j'aimerais obtenir plus de détails.">
-    Contactez-nous !
+    Contact
     </a></li>
 </ul>
 </nav>

@@ -48,7 +48,14 @@
 .headline-show {
     background-color: #EDEFF9; 
     color: black;
-    min-height: 120vh;
+    min-height: 130vh;
+    width: 100%;
+    position: relative;
+}
+.home_wave {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
     width: 100%;
 }
 /* Mobile styles */
@@ -148,6 +155,10 @@
 .discover-button {
     position: relative;
     z-index: 1;
+}
+
+footer {
+    z-index: 0;
 }
 
 /* Pour les petits écrans (smartphones) */

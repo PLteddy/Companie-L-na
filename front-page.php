@@ -40,7 +40,8 @@ if (have_rows('headline_show')):
 endif; // Fin 
 ?>
 
-<section class="headline-show" id="next-section"> 
+<section class="headline-show" id="next-section">
+     
     <h2>Spectacles à la une</h2>
     <?php if (!empty($headline_show)): ?>
             <?php foreach ($headline_show as $headline_show): ?>
@@ -71,6 +72,7 @@ endif; // Fin
                 <h2>Il n'y a pas de spectacles pour l'instant.</h2>
             </div>
         <?php endif; ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/wave_home.svg" alt="Vague de la page d'accueil" class="home_wave">
 </section>
 
 <?php $gifs = get_field("gifs");
