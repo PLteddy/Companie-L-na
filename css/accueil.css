@@ -49,7 +49,7 @@
     background-color: #EDEFF9; 
     color: black;
     min-height: 130vh;
-    width: 100%;
+    max-width: 100%;
     position: relative;
 }
 .home_wave {
@@ -57,6 +57,7 @@
     bottom: -30px;
     left: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -65,6 +66,13 @@
         padding: 1rem;     /* Optional padding for mobile */
     }
 
+    .home_wave {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 .headline-show h2{
     padding: 2rem;
@@ -127,7 +135,8 @@
 .video_culturelle {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     min-height: 600px; /* Augmentez la hauteur */
     display: flex;
     flex-direction: column; /* Les éléments se positionnent en colonne */
@@ -135,7 +144,6 @@
     justify-content: center; /* Centre verticalement */
     z-index: 1;
     background-color: white;
-    padding: 20px; /* Ajoute un peu d'espace intérieur */
 }
 .video_culturelle h2 {
     margin-bottom: 20px; /* Ajoute un espace sous le titre */
@@ -147,8 +155,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
@@ -163,6 +171,10 @@ footer {
 
 /* Pour les petits écrans (smartphones) */
 @media (max-width: 600px) {
+    .video_culturelle {
+        width: 100%;
+        height: 90%;
+    }
     .hero h1 {
         font-size: 32px;
         width: 90%;

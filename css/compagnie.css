@@ -12,11 +12,13 @@
   padding: 2rem;
   box-sizing: border-box;
   text-align: center;
+  z-index: 2;
 }
 
 .c_one p {
   margin-top: 2rem;
   max-width: 750px;
+  z-index: 2;
 }
 
 .c_two {
