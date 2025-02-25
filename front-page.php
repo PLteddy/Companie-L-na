@@ -46,7 +46,7 @@ endif; // Fin
             <?php foreach ($headline_show as $headline_show): ?>
                 <div class="show_container">
                     <div class="show_picture">
-                        <img src="<?php echo esc_url($headline_show['photo']['sizes']['custom_size']); ?>" alt="Photo du spectacle à la une">
+                    <img src="<?php echo esc_url($headline_show['photo']['url']); ?>" alt="Photo du spectacle à la une">
                         <?php if (isset($headline_show['lien']['url'])) : //Pour le lien ici ça doit retourné un tableau pas un url?> 
                             <button onclick="window.location.href='<?php echo esc_url($headline_show['lien']['url']); ?>'" target="<?php echo esc_attr($headline_show['lien']['target']); ?>">
                                 Voir plus de détails

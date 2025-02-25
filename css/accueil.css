@@ -19,8 +19,6 @@
     pointer-events: none; /* Empêche l'interaction avec la vidéo */
 }
 
-
-
 .content-section {
     position: relative;
     z-index: 1;
@@ -50,13 +48,9 @@
 .headline-show {
     background-color: #EDEFF9; 
     color: black;
-    min-height: 100vh;
-    max-width: 100vw; /* Empêche le dépassement horizontal */
+    min-height: 120vh;
     width: 100%;
-    overflow: hidden; /* Évite tout débordement */
-    box-sizing: border-box; /* Prévient les problèmes liés au padding */
 }
-
 /* Mobile styles */
 @media (max-width: 768px) {
     .headline-show {
@@ -86,6 +80,12 @@
     gap: 2rem;
     align-items: center;
 }
+.show_picture img {
+    width: 520px;
+    height: auto;
+    border-radius: 2rem;
+}
+
 
 .show_details {
     display: flex;
@@ -115,29 +115,21 @@
     color: black;
     width: 22.125rem;
 }
-.show_picture img {
-    width: 520px;
-    height: 300px;
-    border-radius: 2rem;
-}
 
 
 .video_culturelle {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 600px;
-    max-width: 100vw; /* Empêche le dépassement horizontal */
+    min-height: 600px; /* Augmentez la hauteur */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Les éléments se positionnent en colonne */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
     z-index: 1;
     background-color: white;
-    padding: 20px;
-    box-sizing: border-box; /* Empêche le padding d'affecter la largeur */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
 }
-
 .video_culturelle h2 {
     margin-bottom: 20px; /* Ajoute un espace sous le titre */
     color: #fff; /* Si nécessaire, mettez une couleur visible */
@@ -148,16 +140,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 110%;
+    height: 110%;
     object-fit: cover;
-    overflow: hidden;
     z-index: -1;
 }
-
-
+.discover-button {
+    position: relative;
+    z-index: 1;
+}
 
 /* Pour les petits écrans (smartphones) */
 @media (max-width: 600px) {

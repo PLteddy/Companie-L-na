@@ -55,6 +55,10 @@ p {
     font-size: 18px;
 }
 
+img {
+    width: auto;
+    height: auto;
+}
 
 button {
     font-family: 'Montserrat', sans-serif;

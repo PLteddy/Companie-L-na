@@ -11,6 +11,7 @@
 
 <h1 class="actionh1"><?php the_title(); ?></h1>
 <section class="action">
+
 <div class="one"> 
     <?php 
         //$action_groupe = get_field("action_one");
@@ -56,7 +57,10 @@ endif;
 // Vérifiez si le tableau n'est pas vide
 if (!empty($two)):
 ?>
+
+
     <div class="two">
+    <div class="wave"></div>
         <div class="two_text">
             <h2><?php echo esc_html($two[0]['title']); ?></h2>
             <p><?php echo wp_kses_post($two[0]['text']); ?></p>
@@ -70,7 +74,7 @@ if (!empty($two)):
     </div>
     <?php endif; ?>
 
-    <img  class="wave" src="<?php echo get_template_directory_uri(); ?>/assets/wave.svg" alt="wave" class="wave">
+
     <?php 
 $three = []; // Tableau vide pour stocker les éléments
 if (have_rows('action_three')): 
@@ -113,7 +117,9 @@ endif;
 // Vérifiez si le tableau n'est pas vide
 if (!empty($four)):
 ?>
+
     <div class="two">
+    <div class="wave"></div>
         <div class="two_text">
             <h2><?php echo esc_html($four[0]['title']); ?></h2>
             <p><?php echo wp_kses_post($four[0]['text']); ?></p>
@@ -127,7 +133,6 @@ if (!empty($four)):
     </div>
     <?php endif; ?>
 
-    <img  class="wave" src="<?php echo get_template_directory_uri(); ?>/assets/wave.svg" alt="wave" class="wave">
 
     <div class="one"> 
     <?php 
